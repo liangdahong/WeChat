@@ -1411,6 +1411,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		049198E324B0EBCA008BB293 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				26064AB71F5D9A1400566B95 /* main.m */,
+				26064AB91F5D9A1400566B95 /* AppDelegate.h */,
+				26064ABA1F5D9A1400566B95 /* AppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		049198E424B0EBEF008BB293 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				26064AE91F5DA1F800566B95 /* Model */,
+				26064AEA1F5DA1F800566B95 /* View */,
+				26064AEB1F5DA1F800566B95 /* Controller */,
+				26064AEC1F5DA1F800566B95 /* ViewModel */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		2601757E1FE90492000F6A25 /* General */ = {
 			isa = PBXGroup;
 			children = (
@@ -1472,12 +1493,8 @@
 		26064AB51F5D9A1400566B95 /* WeChat */ = {
 			isa = PBXGroup;
 			children = (
-				26064AB91F5D9A1400566B95 /* AppDelegate.h */,
-				26064ABA1F5D9A1400566B95 /* AppDelegate.m */,
-				26064AE91F5DA1F800566B95 /* Model */,
-				26064AEA1F5DA1F800566B95 /* View */,
-				26064AEB1F5DA1F800566B95 /* ViewController */,
-				26064AEC1F5DA1F800566B95 /* ViewModel */,
+				049198E324B0EBCA008BB293 /* AppDelegate */,
+				049198E424B0EBEF008BB293 /* Classes */,
 				26064AEF1F5DA21000566B95 /* Utils */,
 				26064AF01F5DA21000566B95 /* Vendor */,
 				26064AED1F5DA21000566B95 /* Macros */,
@@ -1492,7 +1509,6 @@
 		26064AB61F5D9A1400566B95 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				26064AB71F5D9A1400566B95 /* main.m */,
 				26225D981F6557F40074BFC3 /* WeChat.pch */,
 			);
 			name = "Supporting Files";
@@ -1546,7 +1562,7 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		26064AEB1F5DA1F800566B95 /* ViewController */ = {
+		26064AEB1F5DA1F800566B95 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				26064AF11F5DB46500566B95 /* BaseClass */,
@@ -1561,7 +1577,7 @@
 				84725F1D246294B000DCC9B8 /* Search */,
 				E932C41D2136769600B32A9F /* ShortVideo */,
 			);
-			path = ViewController;
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		26064AEC1F5DA1F800566B95 /* ViewModel */ = {
@@ -4001,8 +4017,8 @@
 				TargetAttributes = {
 					26064AB21F5D9A1400566B95 = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = 3FUZGWB9K9;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = JURK72AKL4;
+						ProvisioningStyle = Manual;
 					};
 					26064ACB1F5D9A1400566B95 = {
 						CreatedOnToolsVersion = 8.3.2;
@@ -5120,8 +5136,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3FUZGWB9K9;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = JURK72AKL4;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -5133,7 +5149,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mh.wechat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = wildcard;
 				WARNING_CFLAGS = (
 					"-Wno-documentation",
 					"-Wno-ambiguous-macro",
@@ -5149,8 +5165,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3FUZGWB9K9;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = JURK72AKL4;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -5162,7 +5178,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mh.wechat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = wildcard;
 				WARNING_CFLAGS = (
 					"-Wno-documentation",
 					"-Wno-ambiguous-macro",

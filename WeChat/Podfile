@@ -185,6 +185,5 @@ end
 
 target 'WeChatUITests' do
 end
-
 end
 
