@@ -52,7 +52,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+
     /// 设置
     [self _setup];
     
@@ -78,8 +78,7 @@
     
     // 设置title
     RAC(self.navBar.titleLabel, text) = RACObserve(self.viewModel, title);
-    
-    
+
     /// 动态更新tableHeaderView的高度. PS:单纯的设置其高度无效的
     [[[RACObserve(self.viewModel.profileViewModel, unread)
       distinctUntilChanged]
@@ -186,7 +185,6 @@
     return self.statusBarStyle;
 }
 
-
 #pragma mark - 辅助方法
 - (void)_commentOrReplyWithItemViewModel:(id)itemViewModel indexPath:(NSIndexPath *)indexPath{
     /// 传递数据 (生成 replyItemViewModel)
@@ -231,7 +229,6 @@
         }
     }
 }
-
 
 /// PS:这里复写了 MHTableViewController 里面的UITableViewDelegate和UITableViewDataSource的方法，所以大家不需要过多关注 MHTableViewController的里面的UITableViewDataSource方法
 #pragma mark - UITableViewDataSource & UITableViewDelegate
@@ -414,7 +411,7 @@
     if (progress > 0.35) {
         imageName = @"icons_outlined_camera.svg";
     }
-    
+
     // 0.2 -> 0.3  alpha 1 --> 0
     // 0.3 -> 0.4  alpha 0
     // 0.4 -> 0.5  alpha 0 --> 1
@@ -544,9 +541,5 @@
         make.height.mas_equalTo(MH_APPLICATION_TOP_BAR_HEIGHT);
     }];
 }
-
-
-
-
 
 @end
